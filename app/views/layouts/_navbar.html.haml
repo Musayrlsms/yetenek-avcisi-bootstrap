@@ -1,0 +1,18 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-white
+  %a.navbar-brand{:href => "#"}
+    = image_tag 'logoo.png',  style: 'width: 150px; height: 75px;'
+  .container
+    %button.navbar-toggler{"data-target" => "", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    .collapse.navbar-collapse{:id => "#menuac"}
+      %ul.navbar.-nav.list-inline
+        %li.nav-item
+          %a.nav-link.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Find Jobs
+          .dropdown-menu
+            %a.dropdowm-item{:href => "#"} kategori içi
+        %li.nav-item.dropdown
+          %a.nav-link{:href => "#"} Salary Tools
+        %li.nav-item
+          %a.nav-link{:href => "#"} Career Advice
+    %button{:style => "background-color: white; border-radius: 20px; padding: 5px; border:1px solid;"} Discover
+    %i.far.fa-user.ml.nav_icon
