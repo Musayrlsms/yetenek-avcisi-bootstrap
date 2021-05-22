@@ -15,10 +15,10 @@
           %br/
       %form.form-inline
         %input.form-control.form-control-sm.search{:name => "", :placeholder => "       Search jobs or keywords",:type => "text"}/
-        %i.fas.fa-search{:style => "margin-left:-125px;"}
+        %i.fas.fa-search{:style =>   "margin-left:-125px; color:orangered;"}
         %button.text-white.border-light.search_button Search
     .col-md-6
-      = image_tag 'resim.png',  style: 'margin-top: 50px; margin-left: 370px; width: 500px; height: 450px;'
+      = image_tag 'resim1.png',  style: 'margin-right:100px;'
       
       .container1
   %p.browse-popular
@@ -36,62 +36,79 @@
       .div_bar
         %p
           %i.fas.fa-utensils.div_bar_icon{:style => "background-color:#FA4E09"}
-          Restaurants
+          Restaurants 
     .col-md-4
       .div_bar
         %p
           %i.fas.fa-dumbbell.div_bar_icon{:style => "background-color:#516DF5;"}
           Gym center 
-.container3
+.container
   .row
     .col-md-6
-      %p{:style => "margin-left: 250px; font-size: 65px ; margin-top: 250px; font-weight: 700; "}
+      %p{:style => " font-size: 65px ; margin-top: 250px; font-weight: 700; "}
         The choice is yours,
         %br>/
         we've got you covered
-      %p{:style => "margin-left:250px; font-size: 20px;"}
+      %p{:style => " font-size: 20px;"}
         Whether you need to find top talent, your next great job
         = succeed "opportunity" do
           %br/
         %br/
         bussiness and resourcing challengers,we can help.
     .col-md-6
-      = image_tag 'resim2.png',  style: 'margin-top: 100px; width: 500px; height: 500px; float:right;'
-.container4
+      = image_tag 'resim2.png', class:"resim" 
+.container
   .row
     .col-md-6
-      = image_tag 'resim3.png',  style: 'margin-top: 100px; width: 500px; height: 500px;'
+      = image_tag 'resim3.png',  class:"resim2"
     .col-md-6
-      %p{:style => "margin-left: 250px; font-size: 65px ; margin-top: 250px; font-weight: 700; "}
+      %p{:style => "font-size: 65px ; margin-top: 250px; font-weight: 700; "}
         The choice is yours,
         %br>/
         we've got you covered
-      %p{:style => "margin-left:250px; font-size: 20px;"}
+      %p{:style => " font-size: 20px;"}
         Whether you need to find top talent, your next great job
         = succeed "opportunity" do
           %br/
         %br/
         bussiness and resourcing challengers,we can help.
-     
+        
 
-
-.container4.justify-content-center
+      .container1
+  %p.browse-popular
+    Browse popular
+    %br/
+    jobs
+.container.justify-content-center
   .row
     .col-md-4
       .card
         %i.fab.fa-alipay.div_bar_icon{:style => "color:#516DF5;" }
         %br/
-        %h4.card-title kart 1
+        %h4.card-title Graphic  Design
         %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vgvg
     .col-md-4
       .card
         %i.fas.fa-anchor{:style => "color:#48A465"}
         %br/
-        %h4.card-title kart 2
-        %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur v
+        %h4.card-title UIUX Design
+        %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vsadsa
     .col-md-4
       .card
         %i.fas.fa-brain{:style => "color:orangered"}
         %br/
-        %h4.card-title kart 3
-        %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur v
+        %h4.card-title Development
+        %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vasdasd
+.container
+  .row
+    .col-md-6
+      %h6{:style => "margin-top: 60px; margin-left: -150px; color: #32CD32;"} Find Your next Dream Job
+      %p{:style => "margin-left: -150px; font-size: 75px ; font-weight: 700; "}
+        Get started with
+        %br/
+        our free trial
+     
+    .col-md-6
+      %form.form-inline
+        %input.form-control.form-control-sm.search{:name => "", :placeholder => "Search jobs or keywords",:type => "text"}/
+        %button.text-white.border-light.search_button Subscribe

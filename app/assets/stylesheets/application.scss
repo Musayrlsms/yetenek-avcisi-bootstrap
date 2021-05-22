@@ -34,15 +34,17 @@ a.nav-link{
 .search{
 margin-left:-140px; 
 margin-bottom:-47px; 
-width: 350px;
-height: 50px;
-border-radius: 20px;
+width: 500px;
+height: 75px;
+border-radius: 40px;
 }
 .search_button{
 background-color: orangered;
-margin-left:245px ; 
-border-radius: 20px; 
-padding: 8px;
+margin-left:350px ; 
+margin-top: -30px;
+border-radius: 45px; 
+padding: 10px;
+font-size: 30px;
 }
 
 .button_alt{
@@ -62,8 +64,9 @@ height: 120px;
 .div_bar{
   border: 1px solid white;
   display: inline-block;
-  background-color: #F0FFFF;
+  background-color: #F8F6F7;
   border-radius: 20px;
+  font-size: xx-large;
  
 }
 .div_bar_icon{
@@ -72,16 +75,16 @@ padding: 15px;
 margin-top:10px;
 color: white;
 font-size: 50px; 
-border-radius: 10px;
+border-radius: 20px;
 }
 .card{
-  width: 250px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   margin-left: 200px;
   margin-top: 50px;
   border-radius: 15px;
   padding:5px ;
-  background-color: #F0F8FF;
+  background-color: #FFFFFF;
   
   
 }
@@ -89,6 +92,26 @@ border-radius: 10px;
   font-size: 55px;
   border:none;
 }
+.resim{
+margin-top: 100px;
+width: 500px; 
+height: 500px;
+float:right;
+}
+.resim2{
+  margin-top: 100px;
+  width: 500px; 
+  height: 500px;
+  
+}
+.subscribe{
+  margin-left:-140px; 
+  margin-bottom:-47px; 
+  width: 500px;
+  height: 75px;
+  border-radius: 40px;
+}
+
 
 
 
