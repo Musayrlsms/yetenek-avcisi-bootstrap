@@ -43,8 +43,10 @@ background-color: orangered;
 margin-left:350px ; 
 margin-top: -30px;
 border-radius: 45px; 
-padding: 10px;
-font-size: 30px;
+padding: 20px;
+padding-left: 33px;
+padding-right:33px 
+
 }
 
 .button_alt{
@@ -104,13 +106,27 @@ float:right;
   height: 500px;
   
 }
-.subscribe{
+.search1{
   margin-left:-140px; 
-  margin-bottom:-47px; 
+  margin-bottom:-51px; 
   width: 500px;
   height: 75px;
   border-radius: 40px;
-}
+  }
+  .search_button1{
+  background-color: orangered;
+  margin-left:215px ; 
+  margin-top: -50px;
+  border-radius: 45px; 
+  padding: 20px;
+  padding-left: 33px;
+  padding-right:33px ;
+  font-size: 15px;
+  }
+  .deneme{
+    margin-top: 185px;
+  margin-left: 70px;
+  }
 
 
 
