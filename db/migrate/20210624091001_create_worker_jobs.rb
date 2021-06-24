@@ -1,6 +1,6 @@
-class CreateApplications < ActiveRecord::Migration[6.1]
+class CreateWorkerJobs < ActiveRecord::Migration[6.1]
   def change
-    create_table :applications do |t|
+    create_table :worker_jobs do |t|
       t.integer :advert_id
       t.integer :worker_id
 
