@@ -1,6 +1,6 @@
-class EmployersController < ApplicationController
+class Em::EmployersController < ApplicationController
   def index
-    @employer = Employer.all
+    #@employer = Employer.all
   end
 
   def show
