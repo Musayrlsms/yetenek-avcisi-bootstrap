@@ -15,7 +15,12 @@
             %a.nav-link{:href => "#"} Salary Tools
           %li.nav-item
             %a.nav-link{:href => "#"} Career Advice
-      %button{:style => "background-color: white; border-radius: 20px; padding: 5px; border:1px solid;"} Discover
+      %button.nav_button  Worker   
+      %button.nav_button Employer
+      - if user_signed_in?
+        = link_to 'Çıkış Yap', destroy_user_session_path, method: :delete
+      - else
+        = link_to 'Giriş Yap',new_user_session_path
       %i.far.fa-user.ml.nav_icon
 
     
