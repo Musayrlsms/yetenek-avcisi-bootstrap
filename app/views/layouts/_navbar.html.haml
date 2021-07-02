@@ -15,12 +15,16 @@
             %a.nav-link{:href => "#"} Salary Tools
           %li.nav-item
             %a.nav-link{:href => "#"} Career Advice
-      %button.nav_button  Worker   
-      %button.nav_button Employer
       - if user_signed_in?
-        = link_to 'Çıkış Yap', destroy_user_session_path, method: :delete
+        = link_to 'çıkış yap',  destroy_wo_user_session_path, method: :delete
       - else
-        = link_to 'Giriş Yap',new_user_session_path
+        = link_to  new_wo_user_session_path do
+          %button.nav_button Worker   
+      - if user_signed_in?
+        = link_to 'çıkış yap',  destroy_em_user_session_path, method: :delete
+      - else
+        = link_to  new_em_user_session_path do
+          %button.nav_button Employer
       %i.far.fa-user.ml.nav_icon
 
     
