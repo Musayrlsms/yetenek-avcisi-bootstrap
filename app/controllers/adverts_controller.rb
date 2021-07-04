@@ -12,7 +12,7 @@ class AdvertsController < ApplicationController
   end
 
   def create
-    @adverts=Advert.new(adverts_params)
+    @adverts = Advert.new(adverts_params)
     if @adverts.save
       redirect_to adverts_path
     else
@@ -25,5 +25,5 @@ class AdvertsController < ApplicationController
 
   def adverts_params
     params.require(:advert).permit(:title, :description, :salary, :experience, :employer_id, :job_id)
-   end
+  end
 end

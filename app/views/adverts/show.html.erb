@@ -1,8 +1,7 @@
+<h1>Ayrıntılar</h1>
+<%= @adverts.title %><br>
+<%= @adverts.description %><br>
+<%= @adverts.salary %><br>
+<%= @adverts.experience %><br>
 
-<div class="center">
-<%= form_for @adverts do|f| %>
- <%= @advert.title %><br>
-  
-
- <% end %>
- </div>
+<%=link_to "Tümünü Göster",adverts_path%>
