@@ -4,6 +4,7 @@ class Em::EmployersController < ApplicationController
   end
 
   def show
+    @workers = Workers.all
   end
 
   def new
