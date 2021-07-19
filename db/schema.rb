@@ -34,17 +34,6 @@ ActiveRecord::Schema.define(version: 2021_07_07_183247) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "employers", force: :cascade do |t|
-    t.string "name"
-    t.string "surname"
-    t.string "company_name"
-    t.string "phone_number"
-    t.string "e_mail"
-    t.integer "company_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "jobs", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -72,17 +61,6 @@ ActiveRecord::Schema.define(version: 2021_07_07_183247) do
   end
 
   create_table "worker_jobs", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "workers", force: :cascade do |t|
-    t.string "name"
-    t.string "surname"
-    t.integer "age"
-    t.string "e_mail"
-    t.string "phone_number"
-    t.integer "job_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
