@@ -1,0 +1,15 @@
+.container.justify-content-center
+  .row
+    - @workers.each do |worker|
+      .col
+        .card
+          %i.far.fa-user.div_bar_icon{:style => "color:#516DF5;" }
+          %br/ 
+          %h4.card-title
+          = worker.username
+          %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vgvg
+          = link_to em_employer_path(worker.id) do
+            %button.text-white.border-light.view_button View profile
+          
+
+

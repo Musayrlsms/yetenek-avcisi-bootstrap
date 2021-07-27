@@ -1,11 +1,4 @@
-.container.justify-content-center
-  .row
-    @workers.each do |worker|
-      .col-md-4
-        .card
-          %i.far.fa-user.div_bar_icon{:style => "color:#516DF5;" }
-          %br/ 
-          %h4.card-title= worker.name||"mahmıd"
-          %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vgvg
-          %button.text-white.border-light.view_button View profile
-
+.center
+  %h1 Kullanıcı
+  = @worker.username
+  %br/

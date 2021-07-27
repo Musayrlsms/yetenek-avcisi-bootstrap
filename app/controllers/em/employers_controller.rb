@@ -1,10 +1,10 @@
 class Em::EmployersController < ApplicationController
   def index
-    #@employer = Employer.all
+    @workers = User.where(usertype:"worker")
   end
 
   def show
-    @users = Users.all
+    @worker= User.find(params[:id])
   end
 
   def new
