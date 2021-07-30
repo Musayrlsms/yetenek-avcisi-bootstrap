@@ -4,17 +4,19 @@ class AdvertsController < ApplicationController
   end
 
   def show
-    @adverts = Advert.find_by_id(params[:id])
+    @adverts = Advert.find(params[:id])
   end
 
   def new
     @adverts = Advert.new
+    @jobs = Job.all
   end
 
   def create
     @adverts = Advert.new(adverts_params)
-    if @adverts.save
+    if @adverts.save!
       redirect_to adverts_path
+
     else
       render :new
     end

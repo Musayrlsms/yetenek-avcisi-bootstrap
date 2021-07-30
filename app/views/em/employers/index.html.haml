@@ -1,3 +1,5 @@
+= link_to new_advert_path do
+  %button.text-white.border-light.view_button İş İlanı Oluştur
 .container.justify-content-center
   .row
     - @workers.each do |worker|
@@ -10,6 +12,8 @@
           %p.card-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnssimos voluptatum pariatur vgvg
           = link_to em_employer_path(worker.id) do
             %button.text-white.border-light.view_button View profile
+
+
           
 
 
