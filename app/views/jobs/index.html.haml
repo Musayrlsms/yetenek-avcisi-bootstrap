@@ -1,0 +1,8 @@
+%h1 Tüm işler
+%table{:border => "1"}
+  %tr
+    %td Adı
+  - @jobs.each do |job|
+    %tr
+      %td= job.name
+= link_to "Yeni Kategori Oluştur",new_job_path,class: 'button'
