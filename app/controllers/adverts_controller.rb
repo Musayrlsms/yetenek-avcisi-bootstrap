@@ -14,6 +14,9 @@ class AdvertsController < ApplicationController
 
   def create
     @adverts = Advert.new(adverts_params)
+    job_id = params[:advert][:job_id].last
+    @adverts.user_id = current_em_user.id
+    @adverts.job_id = job_id
     if @adverts.save!
       redirect_to adverts_path
 
