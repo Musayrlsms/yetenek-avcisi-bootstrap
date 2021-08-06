@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'worker_jobs/index'
   resources :jobs
   resources :adverts
   root to: 'homes#index'
