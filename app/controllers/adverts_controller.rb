@@ -1,4 +1,5 @@
 class AdvertsController < ApplicationController
+  before_action :authenticate_em_user!, :except => [:index,:show]
   def index
     @adverts = Advert.all
   end

@@ -1,0 +1,11 @@
+%h1 Tüm İlanlar
+%table{:border => "1"}
+  %tr
+    %td Adı
+    %td Açıklama
+  - @adverts.each do |advert|
+    %tr
+      %td= advert.title
+      %td= advert.description
+      %td= link_to("Göster",advert_path(advert.id))
+= link_to "Yeni Kategori Oluştur",new_advert_path,class: 'button'
