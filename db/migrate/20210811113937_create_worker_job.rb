@@ -1,4 +1,4 @@
-class CreateWorkerJobs < ActiveRecord::Migration[6.1]
+class CreateWorkerJob < ActiveRecord::Migration[6.1]
   def change
     create_table :worker_jobs do |t|
       t.integer :advert_id

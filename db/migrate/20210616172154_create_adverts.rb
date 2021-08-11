@@ -6,6 +6,7 @@ class CreateAdverts < ActiveRecord::Migration[6.1]
       t.integer :salary
       t.integer :experience
       t.integer :job_id
+      
 
       t.timestamps
     end

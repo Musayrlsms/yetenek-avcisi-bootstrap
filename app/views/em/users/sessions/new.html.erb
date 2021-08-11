@@ -1,12 +1,5 @@
-<div class="container-left">
-  <%= image_tag 'resim.png',class:'img' %>
-  <h3>
-    İş Veren Giriş
-  </h3>
-</div>
-<div class="container-right">
-  <div style="margin-left:600px; color:red;">
-    <h2>Log in</h2>
+
+    <h2>Employer Login</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
@@ -35,5 +28,3 @@
     <% end %>
 
     <%= render "/em/users/shared/links" %>
-  </div>
-</div>

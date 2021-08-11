@@ -1,3 +1,3 @@
 class Job < ApplicationRecord
-  belongs_to :advert
+  belongs_to :advert,optional: true
 end

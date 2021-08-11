@@ -25,6 +25,16 @@ class AdvertsController < ApplicationController
       render :new
     end
   end
+  def apply
+    if user_signed_in?
+      Worker_job.create(user_id: current_user.id, advert_id: params[:id], permission: 0 )
+      redirect_to root_path
+    else
+      
+      redirect_to user_session_path,{message: 'Error Subscribing!' }
+      
+    end
+  end
 
   def edit
   end
