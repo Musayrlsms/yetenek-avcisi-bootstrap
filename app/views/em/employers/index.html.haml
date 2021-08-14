@@ -1,5 +1,9 @@
 = link_to new_advert_path do
   %button.text-white.border-light.view_button İş İlanı Oluştur
+%br/ 
+= link_to wo_worker_jobs_path do
+  %button.text-white.border-light.view_button Başvurular
+
 .container.justify-content-center
   .row
     - @workers.each do |worker|

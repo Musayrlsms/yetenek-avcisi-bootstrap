@@ -1,5 +1,9 @@
 class Wo::WorkerJobsController < ApplicationController
   def index
+    @worker_job = WorkerJob.all
+    
+  end
+  def show
     
   end
   def create

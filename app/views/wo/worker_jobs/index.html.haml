@@ -1,0 +1,12 @@
+%h1 Başvurular
+%table{:border => "1",class: "table table-bordered table-white"}
+  %tr
+    %td advert id
+- @worker_job.each do |m|
+  %tr
+    %td
+      = m.advert_id
+      
+
+
+

@@ -6,6 +6,7 @@ class User < ApplicationRecord
   enum usertype: {employer:0, worker:1}
   has_many :adverts
   has_many :companies
+  has_many :WorkerJobs
 
   
 end

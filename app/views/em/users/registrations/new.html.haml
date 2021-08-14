@@ -1,17 +1,18 @@
-.card
-  .card-body
-    = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-      .row
-        .col
-          = f.input :usertype,collection: User.usertypes.keys[0,1],label: 'kullanıcı tipi',class:''
-          = f.input :username
-          = f.input :surname
-          = f.input :company_name
-          = f.input :phone_number
-          = f.input :email
-          = f.input :password, input_html: { autocomplete: 'current-password' }
-          .actions
-            = f.submit "Sign up"
+.div{:style => "d-flex justify-content-center;   background-image: url(#{image_path "doga.png"}) "}
+  .card{:style => "background-color:#239B56; opacity:0.5; margin-left:700px;"}
+    .card-body{:style => "color:#2C3E50 "}
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        .row
+          .col
+            = f.input :usertype,collection: User.usertypes.keys[0,1],label: 'kullanıcı tipi',class:''
+            = f.input :username
+            = f.input :surname
+            = f.input :company_name
+            = f.input :phone_number
+            = f.input :email
+            = f.input :password, input_html: { autocomplete: 'current-password' }
+            .actions
+              = f.submit "Sign up"
 
   
 
